@@ -1,0 +1,94 @@
+@keyframes bee {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-24%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bees_block {
+  position: absolute;
+  z-index: 3;
+  width: 22.448vw;
+  height: 17.76vw;
+  left: 35.938vw;
+  top: 20.208vw;
+
+  &:hover {
+    width: 59.635vw;
+    height: 25.584vw;
+  }
+}
+
+.transition_in {
+  transition: all 600ms ease-in;
+}
+
+.transition_out {
+  transition: all 1600ms ease-out;
+}
+
+.bee {
+  position: absolute;
+  transform: translateY(0);
+  animation: 2.4s bee linear infinite;
+
+  &_containre {
+    transform: translateY(0);
+    animation: 2.4s bee linear infinite;
+  }
+
+  &_1 {
+    width: 1.354vw;
+    height: 3.564vw;
+    top: 3.519%;
+    left: 77.03%;
+
+    &.active {
+      top: -3.814%;
+      left: 14.41%;
+    }
+  }
+
+  &_2 {
+    width: 2.24vw;
+    height: 5.894vw;
+    top: 20.528%;
+    left: 49.884%;
+
+    &.active {
+      top: 0%;
+      left: 90.742%;
+    }
+  }
+
+  &_3 {
+    width: 1.354vw;
+    height: 3.564vw;
+    top: 44.575%;
+    left: 24.13%;
+    
+    &.active {
+      top: 56.568%;
+      left: 7.336%;
+    }
+  }
+
+  &_4 {
+    width: 0.984vw;
+    height: 2.589vw;
+    top: 64.809%;
+    left: 71.462%;
+    
+    &.active {
+      top: 65.678%;
+      left: 41.485%;
+    }
+  }
+}

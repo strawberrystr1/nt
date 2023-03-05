@@ -1,0 +1,9 @@
+$main-padding: 2.084vw;
+$main-green: #50B65A;
+$main-black: #28282E;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

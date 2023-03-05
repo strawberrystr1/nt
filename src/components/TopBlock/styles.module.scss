@@ -1,0 +1,120 @@
+@import '../../styles/variables.module.scss';
+
+.top_block {
+  @include flex;
+  min-height: 100vh;
+  align-items: flex-start;
+
+  &_right {
+    position: relative;
+    margin-left: -1.719vw;
+
+    & .clif {
+      width: 40.313vw;
+      height: 25.729vw;
+      position: relative;
+      left: -1.094vw;
+      top: -5.964vw;
+    }
+
+    & .bear {
+      width: 27.031vw;
+      height: 42.24vw;
+      position: relative;
+      left: 0;
+      z-index: 1;
+      margin-top: 4.427vw;
+    }
+  }
+
+  &_left {
+    width: 60.417vw;
+    min-width: 60.417vw;
+    margin-top: 3.542vw;
+
+    & .header {
+      position: relative;
+      text-transform: uppercase;
+
+      & > h1 {
+        font-weight: 900;
+        font-size: 9.479vw;
+        line-height: 9.167vw;
+        letter-spacing: 2px;
+        color: $main-black;
+      }
+
+      &_comment {
+        width: 10.523vw;
+        height: 5.104vw;
+        background-image: url('/images/comment_box.png');
+        background-size: contain;
+        text-transform: none;
+        font-size: 0.938vw;
+        line-height: 1.25vw;
+        font-weight: 500;
+        padding: 0.625vw 1.042vw 0.729vw 1.771vw;
+        letter-spacing: 2%;
+        position: absolute;
+        left: 50%;
+        top: 58.5%;
+      }
+    }
+
+    & .info {
+      @include flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      &_number {
+        @include flex;
+        flex-wrap: wrap;
+        gap: 2.083vw;
+        width: 29.635vw;
+        height: 12.5vw;
+        margin-left: 11.458vw;
+        margin-top: 4.167vw;
+
+        & .text_wrapper {
+          width: 13.75vw;
+          height: calc(50% - 1.042vw);
+        }
+
+        & .big_text {
+          font-size: 3.334vw;
+          line-height: 3.854vw;
+          font-weight: 500;
+        }
+
+        & .small_text {
+          font-size: 0.938vw;
+          line-height: 1.146vw;
+          font-weight: 400;
+        }
+      }
+
+      &_button {
+        width: 17.344vw;
+        height: 3.385vw;
+        background-color: $main-green;
+        border: none;
+        border-radius: 0.417vw;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.146vw;
+        line-height: 1.458vw;
+        color: white;
+        margin-left: -1.822vw;
+        margin-bottom: 0.208vw;
+        position: relative;
+        z-index: 4;
+        transition: color 250ms ease-out;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

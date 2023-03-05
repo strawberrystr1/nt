@@ -1,0 +1,29 @@
+@import '../../styles/variables.module.scss';
+
+.social {
+  @include flex;
+  flex-direction: column;
+  position: absolute;
+  width: 1.354vw;
+  height: 13.802vw;
+  left: 93.489vw;
+  top: 4.531vw;
+  z-index: 2;
+
+  &_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    width: 0.99vw;
+    font-size: 0.834vw;
+    line-height: 1.008vw;
+  }
+
+  &_language {
+    width: 1.354vw;
+    height: 1.354vw;
+    position: relative;
+    transform: none;
+  }
+}

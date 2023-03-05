@@ -1,0 +1,67 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+  @include flex;
+
+  &_block {
+    @include flex;
+    width: 84.375vw;
+  }
+
+  &_logo {
+    width: 8.073vw;
+    height: 3.542vw;
+    position: relative;
+  }
+
+  &_buttons {
+    @include flex;
+    justify-content: space-between;
+    width: 11.927vw;
+    height: 100%;
+    justify-self: flex-start;
+
+    &__button {
+      height: 2.188vw;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.938vw;
+      text-transform: uppercase;
+      border-radius: 0.412vw;
+
+      &_green {
+        width: 35.37%;
+        background-color: $main-green;
+        color: white;
+        transition: color 250ms ease-out;
+
+        &:hover {
+          color: black;
+        }
+      }
+
+      &_white {
+        width: 58%;
+        color: black;
+        border: 1px solid black;
+        transition: background-color 250ms ease-out;
+
+        &:hover {
+          background-color: $main-green;
+        }
+      }
+    }
+  }
+
+  &_menu {
+    width: 3.385vw;
+    height: 3.385vw;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    justify-self: flex-end;
+  }
+}
